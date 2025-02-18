@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        #slideshow {
+            transition: background-image 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-white">
+<header id="slideshow" class="relative bg-cover bg-center h-screen" style="background-image: url('https://investinmusk.com/images/banner.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex justify-between items-center p-4">
+            <div class="text-lg font-bold">ELON MUSK</div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
+            <h1 class="text-4xl md:text-6xl font-bold">Elon Musk Official Website</h1>
+            <p class="mt-4 max-w-2xl">Elon Musk is an entrepreneur, founder of SpaceX, Tesla, Neuralink, and The Boring Company. He aims to reduce global warming and make life multi-planetary.</p>
+            <button class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full">Let's Go</button>
+        </div>
+    </header>
+
+    <main class="py-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/elon_musk_official_website_ads.jpg');">
+                <h2>Donate</h2>
+                <p>Support Elon Musk's ventures and help make the world a better place.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/forum_musk.jpg');">
+                <h2>Forum and Chat</h2>
+                <p>Join the community of Elon Musk enthusiasts. Discuss, share ideas, and stay updated.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/elonmusk2.jpg');">
+                <h2>Who is Elon Musk</h2>
+                <p>Learn about the life and achievements of Elon Musk, from his early days to his current ventures.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/elonmusk3.jpg');">
+                <h2>Elon Musk Last News</h2>
+                <p>Stay updated with the latest news and developments related to Elon Musk and his companies.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/elonmuskfamily.jpg');">
+                <h2>Elon Musk Family</h2>
+                <p>Get to know the family of Elon Musk and their influence on his life and career.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/spacex5.jpg');">
+                <h2>SpaceX</h2>
+                <p>Explore the world of SpaceX, its missions, and its goal to make space travel accessible to everyone.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/openai.jpg');">
+                <h2>xAI</h2>
+                <p>Learn about xAI, Elon's new venture into artificial intelligence and its potential to change the world.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/tesla2.jpg');">
+                <h2>Tesla</h2>
+                <p>Discover Tesla's electric vehicles, solar energy products, and their impact on the automotive industry.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://investinmusk.com/images/openai.jpg');">
+                <h2>xAI</h2>
+                <p>Learn about xAI, Elon's new venture into artificial intelligence and its potential to change the world.</p>
+            </div>
+            <div class="section-item" style="background-image: url('https://avatars.mds.yandex.net/i?id=705b383a8b65fadaa822a6e0f3852bb2_l-9168056-images-thumbs&n=13');">
+                <h2>Ваш баннер тута</h2>
+                <p>Договоритесь с разработчиком сайта для размещения инофрмации здесь.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-center py-4">
+        <p class="text-sm">&copy; 2023 Elon Musk Official Website. All rights reserved.</p>
+    </footer>
+    <script>
+        // Массив с изображениями для слайдшоу
+        const images = [
+            'https://investinmusk.com/images/banner.jpg', // Исходное изображение
+            'https://img.championat.com/s/1350x900/news/big/e/v/plati-a-potom-tvitaj-ilon-mask-hochet-sdelat-platnye-akkaunty-v-tvittere_16516604781298411528.jpg', // Ваше первое изображение
+            'https://mf.b37mrtl.ru/files/2023.01/article/63c7e29d2030274d17670116.jpg' // Ваше второе изображение
+        ];
+
+        // Элемент header
+        const slideshow = document.getElementById('slideshow');
+
+        // Текущий индекс изображения
+        let currentIndex = 0;
+
+        // Функция для смены изображения
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % images.length; // Переключаемся по кругу
+            slideshow.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        // Запускаем автоматическую смену каждые 5 секунд
+        setInterval(changeBackground, 4000);
+    </script>
+</body>
+</html>
