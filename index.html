@@ -12,6 +12,120 @@
         #slideshow {
             transition: background-image 1s ease-in-out;
         }
+        body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a202c;
+  color: white;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Добавляем плавный переход для фоновых изображений */
+ #slideshow {
+ transition: background-image 3s ease-in-out;
+ }
+
+header .text-lg {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #63b3ed;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #90cdf4;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #3182ce;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #63b3ed;
+}
+
+.section-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.section-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.section-item h2,
+.section-item p {
+  position: relative;
+  z-index: 2;
+}
+
+.section-item h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-item p {
+  font-size: 1rem;
+}
+
+.section-item:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #1a202c;
+  color: #cbd5e0;
+  font-size: 0.875rem;
+  padding: 1rem;
+  text-align: center;
+}
     </style>
 </head>
 
